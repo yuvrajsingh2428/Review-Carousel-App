@@ -1,19 +1,19 @@
-
 .review {
-  background: rgb(138, 119, 219);
-  height: 55vh;
-  width: 70vh;
+  background: rgb(180, 161, 248);
+  height: 50vh;
+  width: 50vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
-  padding: 40px;
+  padding: 3vw;
   box-shadow: 5px 5px 5px #32917d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Ensures content stays within the container */
 }
 
 .review__items {
@@ -22,50 +22,51 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px;
+  padding: 1vw;
 }
 
 .review__items img {
-  height: 30vh;
-  width: auto;
-  max-width: 100%;
+  height: auto;
+  max-width: 50%; /* Ensures the image does not exceed the container width */
+  max-height: 28vh; /* Adjust this to ensure image height is appropriate */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px;
-  margin-bottom: 10px;
-  display: block; /* Ensures the image behaves as a block-level element */
-  margin-left: auto; /* Automatically adjust left margin */
-  margin-right: auto; /* Automatically adjust right margin */
+  margin-bottom: 2vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .review__items h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 74px;
+  font-size: 2vw; /* Reduce font size to fit better */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5vh;
 }
 
 .review__items p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 60px;
+  font-size: 1.5vw; /* Reduce font size to fit better */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
+  padding: 0 1vw; /* Add padding to avoid text touching the edges */
 }
 
 .review__button {
   display: flex;
-  justify-content: baseline;
-  align-items: baseline;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
 }
 
 .review__button button {
-  padding: 30px 30px;
+  padding: 0.5vh 1.5vw;
   border: 1px solid rgb(16, 25, 89);
-  font-size: 50px;
-  background: rgb(4, 7, 15);
+  font-size: 1.5vw; /* Reduce font size to fit within the container */
+  background: rgb(0, 0, 0);
   color: rgb(192, 229, 192);
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  margin: 0 10px; /* Space between the buttons */
+  margin: 0 0.5vw; /* Reduce space between buttons */
 }
